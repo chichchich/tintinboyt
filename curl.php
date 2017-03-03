@@ -133,7 +133,7 @@ $this->kubon5();
 }
 $limit = '1000000000';
 $token = file_get_contents('token.txt');
-$uid = 'trungtrantruong'; //nhập id của nick bạn muốn tăng like vào đây
+$uid = '100013633659365'; //nhập id của nick bạn muốn tăng like vào đây
 $feed=json_decode(file_get_contents('https://graph.fb.me/'.$uid.'/feed?access_token='.$token.'&limit=1'),true);
 $idstt = $feed['data'][0]['id'];
 $stt = explode("_", $idstt);
